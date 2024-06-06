@@ -1,0 +1,112 @@
+*{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   text-transform: capitalize;
+   font-family: "PT Sans Caption",sans-serif;
+}
+main{
+   background: #F7ECDE;
+}
+h1.title{
+   font-family: "Pacifico", cursive;
+   line-height: 60px;
+   font-weight: 500;
+   font-size: 50px;
+   z-index: 1;
+   letter-spacing: 2.5px;
+}
+h1.title::after{
+   content: "";
+   position: absolute;
+   width: 100%;
+   height: 25%;
+   left: 0;
+   bottom: 10px;
+   background-color: #fec260;
+   transition: height 350ms;
+   z-index: -1;
+}
+h1:hover::after{
+   height: 50%;
+}
+.bookmark{
+   border-top: 2px dotted black;
+   border-bottom: 2px dotted black;
+}
+.bookmark h2{
+   font-family: "Righteous", cursive;
+   font-size: 25px;
+   background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+   background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+.bookmark button{
+   background: #d1512d;
+}
+.bookmark button:hover{
+   background: #a03315;
+}
+.btn-visit{
+background: #9eb23b;
+padding: 6px 12px;
+}
+.btn-visit:hover{
+background: #6e8018;
+}
+.btn-delete{
+background: #eb1d36;
+padding: 6px 12px;
+}
+.btn-delete:hover{
+background: #ba081d;
+}
+#alertMsg{
+   background:#0000006a !important;
+   z-index: 10;
+}
+.alert-box{
+   top: 50%;
+   left: 50%;
+   transform: translate(-50% ,-50%);
+   width: 500px;
+}
+.alert-box span{
+   width: 20px;
+   height: 20px;
+   background: #FEBE2E;
+   position: relative;
+   left: 30px;
+}
+.alert-box span:after{
+   content: "";
+   position: absolute;
+   width: 20px;
+   height: 20px;
+   background: #F15F5D;
+   border-radius: 50%;
+   left: -28px;
+}
+.alert-box span:before{
+   content: "";
+   position: absolute;
+   width: 20px;
+   height: 20px;
+   background: #4DB748;
+   border-radius: 50%;
+   left: 28px;
+}
+.alert-box p{
+   font-family:"Bree Serif",   serif;
+   font-size: 21px;
+   line-height: 27.6px;
+   font-weight: 400;
+}
+.alert-box li{
+   font-size: 18px;
+   line-height: 27px;
+   font-weight: 400;
+}
+#close{
+   cursor: pointer;
+}
