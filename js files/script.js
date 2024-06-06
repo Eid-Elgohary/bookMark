@@ -102,7 +102,7 @@ function removeBookMark(index){
 function validateInput(field){
 
    var regex = {
-      siteName :/^[a-zA-Z\d]{3,}$/,
+      siteName :/^\w{3,}\s?\w{1,}$/,
       siteURL : /^[A-Za-z]*\.?[A-Za-z0-9]{3,}\.[a-zA-Z]{2,}$/
    }
    if(regex[field.id].test(field.value)){
